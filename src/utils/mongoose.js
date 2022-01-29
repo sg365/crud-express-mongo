@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const conn = {};
 
-const mongoDB = 'mongodb://localhost/crud_express';
+const mongoDB = 'mongodb://mongo/crud_express';
 conn.connectDB = async () => {
     try {
         await mongoose.connect(mongoDB, {
